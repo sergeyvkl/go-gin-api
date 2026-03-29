@@ -1,9 +1,9 @@
 # go-gin-api
 Backend in Go using the Gin framework to generate REST API
 
-<br>
-Особенности реализации<br><br>
-1. GORM ORM - полная поддержка MySQL с автоматическими миграциями<br>
+
+## Особенности реализации<br>
+1. **GORM ORM** - полная поддержка MySQL с автоматическими миграциями<br>
 2. Пул соединений - оптимизированная работа с БД<br>
 3. Soft delete - поддержка мягкого удаления<br>
 4. Пагинация - эффективная загрузка данных<br>
@@ -14,8 +14,8 @@ Backend in Go using the Gin framework to generate REST API
 9. Уникальные индексы - гарантия целостности данных<br>
 10. Логирование запросов - для отладки и мониторинга<br>
 
-<br>
-Implementation Features<br><br>
+
+## Implementation Features<br>
 1. GORM ORM - full MySQL support with automatic migrations<br>
 2. Connection Pool - optimized database work<br>
 3. Soft Delete - soft delete support<br>
