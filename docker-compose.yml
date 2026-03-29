@@ -1,0 +1,33 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: go-gin-api
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      # Переменные окружения для подключения к внешней MySQL
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      DB_CHARSET: ${DB_CHARSET}
+      SERVER_PORT: ${SERVER_PORT}
+      ENVIRONMENT: ${ENVIRONMENT}
+    env_file:
+      - .env
+    networks:
+      - app-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  app-network:
+    driver: bridge
