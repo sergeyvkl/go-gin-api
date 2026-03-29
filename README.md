@@ -25,4 +25,8 @@ Implementation Features<br><br>
 7. Docker support - containerization for easy deployment<br>
 8. Data Validation - at the DTO and DB level<br>
 9. Unique Indexes - guarantee data integrity<br>
-10. Query Logging - for debugging and monitoring<br>
+10. Query Logging - for debugging and monitoring<br><br>
+
+Запуск приложения<br>
+bash<br>
+go run main.go<br>
