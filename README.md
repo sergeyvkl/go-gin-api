@@ -27,6 +27,5 @@ Backend in Go using the Gin framework to generate REST API
 9. Unique Indexes - guarantee data integrity<br>
 10. Query Logging - for debugging and monitoring<br><br>
 
-Запуск приложения<br>
-bash<br>
+<ins>Запуск приложения</ins><br/>
 go run main.go<br>
